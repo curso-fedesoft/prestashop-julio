@@ -1,0 +1,45 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detalle Producto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+    <img [src]="productDetails.image"/>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Descripción
+    </ion-card-header>
+    <ion-card-content>
+      {{productDetails.description}}
+    </ion-card-content>
+
+    <ion-card-header>
+      Información Extra
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        Precio
+        <ion-badge item-right>
+          {{productDetails.price}}
+        </ion-badge>
+      </ion-item>
+
+      <ion-item>
+         Genero
+        <ion-badge item-right>
+          {{productDetails.gender}}
+        </ion-badge>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
